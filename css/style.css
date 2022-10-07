@@ -67,8 +67,15 @@ body {
 
 .page-header {
 }
+
 .container {
+  width: 1300px;
+  padding-left: 19px;
+  padding-right: 19px;
+  outline: 2px solid red;
+  margin: 0 auto;
 }
+
 .page-nav {
   display: flex;
   align-items: center;
@@ -78,21 +85,61 @@ body {
   font-size: 36px;
   line-height: 1.5;
   color: var(--title-color);
+  margin-right: 236px;
 }
+
 span.logo-accent {
   color: var(--logo-accent-color);
 }
+
 .nav-list {
+  display: flex;
+  align-items: center;
 }
+
 .nav-item {
 }
 .nav-list-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--main-color);
 }
-.button {
+
+.nav-list-link:not(last-child) {
+  margin-right: 50px;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  min-width: 312px;
+  text-align: center;
 }
 .hero {
 }
+
+.hero-container {
+  max-width: 540px;
+}
 .hero-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  color: var(--title-color);
+}
+
+.hero-img {
+  position: absolute;
 }
 .hero-text {
 }
